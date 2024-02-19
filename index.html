@@ -9,15 +9,15 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-   <!-- font awesome -->
-   <script src="https://kit.fontawesome.com/7b0f99a7b7.js" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/7b0f99a7b7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- navbar -->
-  <div class="navbar  bg-base-100 lg:px-20 ">
+  <div class="navbar  bg-base-100 lg:px-32">
     <div class="navbar-start w-3/4 ">
-       <div class="dropdown">
+      <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -41,9 +41,100 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <a class=" px-4 py-2 text-green-500 bg-green-500 bg-opacity-10 box-border border border-solid border-green-500 border-opacity-40 rounded-xl ">Bus <i class="fa-solid fa-van-shuttle" style="color: #0ddc09;"></i></a>
+      <!-- <a class=" px-5 py-2 text-green-500 bg-green-500 bg-opacity-10 box-border border border-solid border-green-500 border-opacity-40 rounded-xl ">Bus <i class="fa-solid fa-van-shuttle" style="color: #0ddc09;"></i></a> -->
+
+      <button
+        class=" px-6 py-2 text-green-500 bg-green-500 bg-opacity-10 box-border border border-solid border-green-500 border-opacity-40 rounded-xl ">Bus
+        <i class="fa-solid fa-van-shuttle" style="color: #0ddc09;"></i></button>
     </div>
   </div>
+  <!-- ------------------------------ end navbar------------------------------------------ -->
+
+  <!-- -------------------------------------bannar --------------------------------------- -->
+  <div class="hero h-96 w-10/12 m-auto rounded-3xl" style="background-image: url(./images/banner.png);">
+    <div class="hero"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-xl">
+        <h1 class="mb-5 text-5xl  font-bold">End-To-End Travel With <br><span class="text-green-500">SA Paribahan</span>
+        </h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="bg-[#0ddc09] text-black px-4 py-2 rounded-xl">Buy Ticket</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="  mt-5">
+    <!-- -----------------------best offer for you-------------------------- -->
+    <Section class=" w-10/12 mx-auto mt-10 ">
+      <h1 class="text-center">Best Offer for you</h1>
+      <div class="flex justify-between mt-10 gap-5">
+        <div class="w-1/2 h-[220px] bg-yellow-500 rounded-xl relative">
+          <div class="flex justify-around pt-20 ">
+            <div>
+              <h2>15% off</h2>
+              <p>on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <div class="items-center">
+              <h2>NEW15</h2>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+          <img src="./images/cupon-devider.png" alt="" class="absolute right-52 bottom-0">
+        </div>
+        <div class="w-1/2 h-[220px] bg-orange-500 rounded-xl relative">
+          <div class="flex justify-around pt-20 ">
+            <div>
+              <h2>20% off</h2>
+              <p>on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <div class="items-center">
+              <h2>Couple 20</h2>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+          <img src="./images/cupon-devider.png" alt="" class="absolute right-52 bottom-0 ">
+        </div>
+      </div>
+
+      <button
+        class="bg-white text-green-500 px-4 py-2 rounded-xl box-border border border-solid border-green-500 border-opacity-40  text-center mt-10 ">Buy
+        Ticket</button>
+    </Section>
+
+    <!-- --------------------------------------purchase------------------------------------ -->
+    <section class="w-full h-96 mt-10  border-t  border-solid border-green-500 rounded-l-2xl bg-gray-200  ">
+      <div class="text-center w-10/12 min-h-full m-auto mt-16  ">
+        <h1>SA Paribahan</h1>
+        <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated
+          testing features allow for a streamlined .</p>
+        <div class="flex w-3/4 h-36 justify-between  ">
+          <div class="flex ">
+            <div class="w-10 h-12">
+              <img src="./images/bus-logo.png" alt="" class="h-full w-full">
+            </div>
+            <div class="text-left">
+            <h2>Greenline Paribahan</h2>
+            <p>Coach-009-WEB ! AC_Business</p>
+          </div>
+        </div>
+        
+        <div>
+          <p>40 seat</p>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+    </section>
+  </main>
+
 
 </body>
 
