@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Ticketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Ticketing</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/7b0f99a7b7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+  <!-- navbar -->
+  <div class="navbar  bg-base-100 lg:px-20 ">
+    <div class="navbar-start w-3/4 ">
+       <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <a class=" text-xl">SA-Ticket</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Destination</a></li>
+        <li><a>Search</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a class=" px-4 py-2 text-green-500 bg-green-500 bg-opacity-10 box-border border border-solid border-green-500 border-opacity-40 rounded-xl ">Bus <i class="fa-solid fa-van-shuttle" style="color: #0ddc09;"></i></a>
+    </div>
+  </div>
+
 </body>
+
 </html>
