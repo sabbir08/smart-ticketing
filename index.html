@@ -158,7 +158,7 @@
 
 
       <!-- ------------------------------------available ticket---------------------------- -->
-      <section class="w-10/12 h-96 m-auto bg-slate-100 rounded-xl mt-10">
+      <section class="w-10/12 h-auto m-auto bg-slate-100 rounded-xl mt-10">
         <div class="flex justify-between w-full p-5">
           <div>
             <div>
@@ -166,8 +166,8 @@
                 <h2>Select Your Seat</h2>
               </div>
               <div class="flex justify-between w-full h-10 mt-7">
-                <p> <i class="fa-solid fa-chair" style="color: rgba(3, 7, 18, 0.5);"></i> <span>40 seat Left</span> </p>
-                <p> <i class="fa-solid fa-chair" style="color: #8fed02;"></i> <span>40 seat Left</span> </p>
+                <p> <i class="fa-solid fa-chair" style="color: rgba(3, 7, 18, 0.5);"></i> <span>Available</span> </p>
+                <p> <i class="fa-solid fa-chair" style="color: #8fed02;"></i> <span class="text-[#8fed02]">Selected</span> </p>
               </div>
             </div>
             <div class=" ml-auto flex justify-center w-20 h-10 bg-slate-300 rounded-xl ">
@@ -196,18 +196,22 @@
 
           <div>
             <h2>Select your Seat</h2>
+            <hr style="background: rgba(255, 255, 255, 0.15);">
             <div class="overflow-x-auto">
               <table class="table table-zebra">
                 <!-- head -->
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Name</th>
-                    <th>Job</th>
-                    <th>Favorite Color</th>
+                    <th>Seat <span>1</span></th>
+                    <th>Class</th>
+                    <th>Price</th>
                   </tr>
+                  
                 </thead>
+                
                 <tbody>
+                  
                   <!-- row 1 -->
                   <tr>
                     <th>1</th>
@@ -231,12 +235,46 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
 
+            </div>
+            <hr style="background: rgba(255, 255, 255, 0.15);">
+            <div class=" flex justify-between mt-4">
+              <h2>Total Price:</h2>
+              <p>BDT <span>100</span></p>
+            </div>
+            <div class="relative mt-4">
+              <input type="text" class="border border-gray-300 rounded px-4 py-2 w-full" placeholder="Have Any Coupon?">
+              <button class="rounded-xl absolute w-3/12 h-8 text-center right-6  text-black mt-1   bg-green-500">Apply</button>
+            </div>
+            <div class="flex justify-between mt-4">
+              <h2>Grand Total:</h2>
+              <p>BDT <span>100</span></p>
+            </div>
+            <div>
+              <div class="max-w-md mt-4">
+                <form class="bg-slate-200\ shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                  <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Passenger Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 ">
+                  </div>
+                  <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 ">
+                  </div>
+                  <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Id</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email Id" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 ">
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
 
         </div>
-        </div>
+        
 
 
 
